@@ -1,0 +1,129 @@
+.home{
+    height: 100%;
+    padding-top: 25vh;
+    align-items: center;
+    text-align: center;
+    font-size: $font-med;
+
+
+    .wave {
+        font-size: 2.5rem;
+        animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+        animation-duration: 2.5s;        /* Change to speed up or slow down */
+        animation-iteration-count: infinite;  /* Never stop waving :) */
+        transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+        display: inline-block;
+      }
+      
+      @keyframes wave-animation {
+          0% { transform: rotate( 0.0deg) }
+         10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+         20% { transform: rotate(-8.0deg) }
+         30% { transform: rotate(14.0deg) }
+         40% { transform: rotate(-4.0deg) }
+         50% { transform: rotate(10.0deg) }
+         60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+        100% { transform: rotate( 0.0deg) }
+      }
+
+
+    
+    h2{
+        margin-bottom: 0.5rem;
+    }
+
+    &__name{
+        font-size: 4.8rem;
+        padding-bottom: 1rem;
+        margin-top: 0.4rem;
+        margin-bottom: 0;
+
+        &-last{
+            color: rgba(245, 99, 62, 0.816);
+            font-weight: 700;
+        }
+    }
+
+    
+}
+
+
+//iconscss
+// @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+$timing        : 265ms;
+$iconColor     : #00B5F5;
+$accent        : #002A8F;
+$bluefade      : #0043E0;
+$gradient      : #00B5F5;
+
+@mixin transformScale($size: 1) {
+    transform: scale($size);
+    -ms-transform: scale($size);
+    -webkit-transform: scale($size);
+}
+
+body {
+    background-color: rgba($iconColor, 0.05);
+}
+
+.social-container {
+    min-width: 140px;
+    // margin: 5rem auto;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    text-align: center;
+    // justify-content: center;
+}
+.social-icons {
+    padding: 0;
+    list-style: none;
+    margin: 1em;
+  
+    li {
+        display: inline-block;
+        margin: 0.13em;
+        position: relative;
+        font-size: 1.6em;
+
+    }
+
+    i {
+        color: #fff;
+        position: absolute;
+        top: 15px;
+        left: 16px;
+        transition: all $timing ease-out;
+    }
+
+    a {
+        display: inline-block;
+      
+        &:before {
+            @include transformScale();
+            content: " ";
+            width: 60px;
+            height: 60px;
+            border-radius: 100%;
+            display: block;
+            background: linear-gradient(45deg, rgb(47, 153, 191), rgb(33, 33, 135)); //$iconColor
+            transition: all $timing ease-out;
+        }
+        
+        &:hover:before {
+            transform: scale(0);
+            transition: all $timing ease-in;
+        }
+        
+        &:hover i {
+            @include transformScale(2.2);
+            color: $iconColor;
+            background: -webkit-linear-gradient(45deg, rgb(48, 16, 230) 20%, rgb(0, 251, 84));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: all $timing ease-in;
+        }
+    }
+  
+}

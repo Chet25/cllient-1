@@ -1,0 +1,27 @@
+.container {
+    max-width: 69.375rem;
+    margin: 0 auto;
+
+    &--pall {
+        padding-top: 1.375rem;
+        padding-right: 1.5rem;
+        padding-bottom: 4.375rem;
+        padding-left: 1.5rem;
+
+        @include breakpoint-up(large) {
+            padding-top: 1rem;
+            padding-bottom: 6rem;
+        }
+    }
+}
+.contact {
+    background-color: transparent;
+    transform: translateY(8%);
+
+    @include breakpoint-down(large) {
+        transform: translateY(3%);
+    }
+    @include breakpoint-down(medium) {
+        transform: translateY(1%);
+    }
+}
