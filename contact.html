@@ -19,13 +19,13 @@
 
 <body>
     <header>
-        <div class="menu-btn">
+        <div class="menu-btn hide-for-desktop">
             <span class="menu-btn__burger"></span>
         </div>
 
         <nav class="nav">
             <ul class="menu-nav">
-                <li class="menu-nav__item">
+                <li class="menu-nav__item hide-for-desktop">
                     <a href="index.html" class="menu-nav__link ">Home</a>
                 </li>
                 <li class="menu-nav__item">
@@ -38,26 +38,35 @@
                     <a href="contact.html" class="menu-nav__link active">contact me</a>
                 </li>
             </ul>
+
+
         </nav>
+        <div class="desktop_container hide-for-mobile">
+            <!-- these are the menu items that are shown for desktop -->
+            <a href="index.html" class="desktop_container__link ">Home</a>
+            <a href="about.html" class="desktop_container__link">about</a>
+            <a href="projects.html" class="desktop_container__link">projects</a>
+            <a href="contact.html" class="desktop_container__link active">contact me</a>
+        </div>
     </header>
 
 
     <main>
         <section class="contact container">
-            <h2>Reach me :-</h2>
+            <!-- <h2>Reach me :-</h2>
             <div class="contact__list">
                 <ul>
                     <li class="contact__item">
                         <h3 class="contact__number">+91 89207 93869</h3>
                     </li>
-                    
-                </ul>
-            </div>
-            
-        </section>
-        
 
-    
+                </ul>
+            </div> -->
+
+        </section>
+
+
+
     </main>
 
 
