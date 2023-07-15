@@ -11,15 +11,15 @@ const config = {
   // favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://chet25.github.io',
+  url: 'https://Chet25.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/cllient-1/my-website',
+  baseUrl: '/cllient-1/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'https://github.com/Chet25', // Usually your GitHub org/user name.
-  projectName: 'cllient1', // Usually your repo name.
+  organizationName: 'Chet25', // Usually your GitHub org/user name.
+  projectName: 'cllient - 1', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -41,16 +41,16 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/Chet25/cllient-1',
+          // editUrl:
+          //   'https://github.com/Chet25/cllient-1',
         },
         // blog: {
         //   showReadingTime: true,
         //   // Please change this to your repo.
         //   // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/Chet25/cllient-1',
-        // },
+        //   editUrl:
+        //     'https://github.com/Chet25/cllient-1',
+        // // },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
