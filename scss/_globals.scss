@@ -16,7 +16,7 @@ body {
     font-size: $font-med;
     font-weight: 300;
     line-height: 1;
-    overflow: hidden;
+    // overflow: scroll;
     // min-height: 300vh;
     // overflow-x: hidden;
     color: white;
@@ -39,7 +39,6 @@ a {
         background-clip: text;
         color: transparent;
         font-weight: 550;
-        
     }
 }
 
@@ -56,7 +55,7 @@ header {
     height: 5px;
 }
 main {
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
 
