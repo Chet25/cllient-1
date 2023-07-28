@@ -6,7 +6,10 @@
     font-size: $font-med;
 
     &_main{
-        height: 100vh;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        // animation: grow 2.5s ease-in-out;
     }
     
 
@@ -50,88 +53,30 @@
             color: transparent;
             font-weight: 700;
         }
-    }
 
     
-}
-
-
-//iconscss
-// @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
-
-$timing        : 265ms;
-$iconColor     : #00B5F5;
-$accent        : #002A8F;
-$bluefade      : #0043E0;
-$gradient      : #00B5F5;
-
-@mixin transformScale($size: 1) {
-    transform: scale($size);
-    -ms-transform: scale($size);
-    -webkit-transform: scale($size);
-}
-
-body {
-    background-color: rgba($iconColor, 0.05);
-}
-
-.social-container {
-    min-width: 140px;
-    // margin: 5rem auto;
-    bottom: 0;
-    left: 0;
-    position: fixed;
-    text-align: center;
-    // justify-content: center;
-}
-.social-icons {
-    padding: 0;
-    list-style: none;
-    margin: 1em;
-  
-    li {
-        display: inline-block;
-        margin: 0.13em;
-        position: relative;
-        font-size: 1.6em;
-
     }
 
-    i {
-        color: #fff;
-        position: absolute;
-        top: 15px;
-        left: 16px;
-        transition: all $timing ease-out;
+    &__name::after{
+        content: "";
+        margin-top: 1.48rem;
+        background: linear-gradient(to left, rgba(198, 215, 214, 0.178) 40%, rgba(204, 220, 222, 0.951));
+        height: 5px;
+        display: block;
+        animation: grow 4s ease-in-out ;
+        animation-fill-mode: forwards;
     }
 
-    a {
-        display: inline-block;
-      
-        &:before {
-            @include transformScale();
-            content: " ";
-            width: 60px;
-            height: 60px;
-            border-radius: 100%;
-            display: block;
-            background: linear-gradient(45deg, rgb(47, 153, 191), rgb(33, 33, 135)); //$iconColor
-            transition: all $timing ease-out;
+
+    @keyframes grow {
+        0%{
+            width: 0%;
         }
-        
-        &:hover:before {
-            transform: scale(0);
-            transition: all $timing ease-in;
+        40%{
+            width: 102%;
         }
-        
-        &:hover i {
-            @include transformScale(2.2);
-            color: $iconColor;
-            background: -webkit-linear-gradient(45deg, rgb(48, 16, 230) 20%, rgb(0, 251, 84));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            transition: all $timing ease-in;
+        100%{
+            width: 102%;
         }
     }
-  
 }

@@ -1,20 +1,17 @@
 
-.container {
-    max-width: 69.375rem;
-    margin: 0 auto;
-
-    &--pall {
-        padding-top: 1.375rem;
-        padding-right: 1.5rem;
-        padding-bottom: 4.375rem;
-        padding-left: 1.5rem;
-
-        @include breakpoint-up(large) {
-            padding-top: 1rem;
-            padding-bottom: 6rem;
-        }
+#project{
+    height: 86vh;
+    border-radius: 20px;
+    width: 94%;
+    margin: 0 2.5rem;
+    background: white;
+    padding: 1.3rem 0 0 3rem;
+    transform: translateY(10%);
+    @media all and (max-width: 70rem) {
+        transform: translateY(7%);
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 89vh;
     }
-}
-main{
-    height: 100vh;
 }
