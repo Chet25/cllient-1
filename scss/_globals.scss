@@ -1,9 +1,13 @@
 html {
     font-size: 70%;
-    // box-sizing: border-box;
+    @media all and (max-width:720px) {
+        font-size: 60%;
+    }
+    box-sizing: border-box;
     margin: 0;
     font-family: sans-serif, "Segoe UI", Tahoma, Geneva, Verdana;
 }
+
 *,
 *::before,
 *::after {

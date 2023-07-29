@@ -25,7 +25,7 @@ $white: #fff;
 /* /end */
 
 body{
-//    background-image:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/326221/bg.jpg);
+   // background-image:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/326221/bg.jpg);
    background-attachment: fixed;
    background-size:cover;
    background-repeat:no-repeat;
@@ -39,8 +39,25 @@ h3{
 /* THE FRONT */
 
 .front{
-    background-image:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/326221/bc-front.jpg);
-   background-size:cover;
+   background-color: #000;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.front-image{
+      background-image: url(../images/chirag-new-logo-figma-finished.svg);
+      background-repeat: no repeat;
+      background-size: cover;
+      height: 15rem;
+      width: 15rem;
+   }
+.front-p{
+   font-family: 'Font Awesome 6 Brands';
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 0.2rem;
 }
 
 /* /end */
@@ -48,7 +65,7 @@ h3{
 /* THE BACK */
 
 .back{
-   background-image:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/326221/bc-back.jpg);
+   background-image:url(../images/back-img.jpg);
    background-size:cover;
    
    h1, p, .font-a-icons {
@@ -78,6 +95,7 @@ h3{
    
    .bold{
       font-weight: bold;
+      margin-right: 0.5rem;
    }
    
    .font-a-icons{    
@@ -108,14 +126,15 @@ h3{
       }     
    }
    .icon-box{
+      
       position: relative;
       color: $black;
-      font-size: 2.5rem;
-      height: 3.6rem;
-      width: 3.6rem;
-      padding: 5px;
-      top: 11%;
-      left: 33%;
+      font-size: 2.8rem;
+      height: 3.7rem;
+      width: 3.8rem;
+      padding: 7px;
+      top: 9%;
+      left: 32%;
       display: inline-block;
       border: 2px solid $black;
       margin: 5px;
@@ -147,10 +166,10 @@ h3{
 	perspective: 1000px;
 }
 	/* flip the pane when hovered */
-	.flip-container:hover .flipper, .flip-container.hover .flipper {
-		transform: rotateY(180deg);
-      cursor: pointer;
-	}
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+   transform: rotateY(180deg);
+   cursor: pointer;
+}
 
 .flip-container, .front, .back {
    height: 290px;
@@ -185,7 +204,7 @@ h3{
 	/* firefox 31 */
 	transform: rotateY(0deg);
     @media all and (max-width: 40rem) {
-        transform: translate(15%,30%);
+        transform: translate(15%,110%);
     }
 }
 
@@ -197,7 +216,7 @@ h3{
 	transform: rotateY(180deg);
      @media all and (max-width: 40rem) {
         // transform: rotate(0deg);
-        transform: translate(15%, 137%);
+        transform: translate(15%, 220%);
     }
 }
 

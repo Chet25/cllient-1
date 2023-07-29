@@ -1,12 +1,12 @@
 
 #project{
-    height: 86vh;
-    border-radius: 20px;
+    height: 82vh;
+    border-radius: 15px;
     width: 94%;
     margin: 0 2.5rem;
-    background: white;
-    padding: 1.3rem 0 0 3rem;
-    transform: translateY(10%);
+    background: #fff;
+    padding: 1.5rem 0 0 3rem;
+    transform: translateY(13%);
     @media all and (max-width: 70rem) {
         transform: translateY(7%);
         margin: 0;
