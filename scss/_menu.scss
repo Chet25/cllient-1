@@ -78,7 +78,7 @@
       justify-content: center;
       height: 100vh;
       overflow: hidden;
-      background:linear-gradient(to left, rgb(9, 2, 22) ,rgb(5, 5, 79));
+      background: $secondary;
       list-style-type: none;
       padding-right: 1rem;
       transform: translateY(-100%);
@@ -97,9 +97,6 @@
          
         }
   
-        &.active > a {
-          color: $LimeGreen;
-        }
       }
   
       &__link {

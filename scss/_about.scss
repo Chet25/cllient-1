@@ -1,6 +1,6 @@
 .about{
-    background-color:transparent;
     transform: translateY(8%);
+    
 
     &__container{
         max-width: 69.375rem;
@@ -25,12 +25,14 @@
     }
 
     h2{
+        color: $primary;
         margin-left: 1.85rem;
         font-size: 2.23rem;
         font-weight: 550;
         
     }
     &__bio{
+        color: $primary;
         margin-bottom: 2.4rem;
         margin-left: 1.85rem;
 
@@ -60,7 +62,9 @@
         padding: 1.875rem 1.875rem 2.5rem 1.875rem;
         display: flex;
         flex-wrap: wrap;
-        box-shadow: 2px 2px 2px rgba(51, 203, 220, 0.285);
+        box-shadow: 2px 2px 2px hsla(17, 83%, 54%,0.35);
+        background: $secondary;
+        position: relative;
 
         @include breakpoint-up(medium){
             padding: 1.875rem 1.5625rem;
@@ -68,6 +72,17 @@
 
         &:hover{
             transform: scale(1.05);
+        }
+
+        &::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(at 194% -8%, hsla(11, 78%, 47%, 0.678) 1%, hsla(40, 4%, 14%, 0.1), hsla(40, 4%, 14%, 0.027));
+            z-index: 1;
         }
 
     }
@@ -89,3 +104,14 @@
         width: 100%;
     }
 }
+
+// .about{
+//     &_header{
+//     top: 0;
+//     height: 7rem;
+//     background-color: $secondary;
+//     }
+//     &_body{
+//         background: $primary;
+//     }
+// }

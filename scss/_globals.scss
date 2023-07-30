@@ -15,7 +15,8 @@ html {
 }
 
 body {
-    background: linear-gradient(to left, rgb(12, 72, 151) 10%, rgb(16, 216, 216));
+    // background: linear-gradient(to left, $secondary 10%,$primary);
+    background: linear-gradient(to right ,$secondary 80%,rgba(29, 13, 2, 0.916));
     font-size: $font-med;
     font-weight: 300;
     line-height: 1.2;
@@ -39,7 +40,8 @@ a {
     text-decoration: none;
 
     &.active {
-        background: linear-gradient(to right, rgba(203, 42, 42, 0.941), rgba(33, 16, 191, 0.895));
+        // background: linear-gradient(to right, rgba(203, 42, 42, 0.941), rgba(33, 16, 191, 0.895));
+        background:linear-gradient(to right ,rgba(203, 42, 42, 0.941),$orange);
         background-clip: text;
         color: transparent;
         font-weight: 550;
@@ -65,7 +67,7 @@ footer {
     right: 1rem;
     text-align: right;
     padding: 1rem;
-    color: $GrayishBlue;
+    color: hsl(233, 8%, 62%);;
 }
 
 @mixin transition-ease {

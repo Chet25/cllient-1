@@ -48,7 +48,8 @@
         margin-bottom: 0;
 
         &-last{
-            background:linear-gradient(to right ,rgba(203, 42, 42, 0.941),rgba(33, 16, 191, 0.895));
+            // background:linear-gradient(to right ,rgba(203, 42, 42, 0.941),rgba(33, 16, 191, 0.895));
+            background:linear-gradient(to right ,rgba(203, 42, 42, 0.941),$orange);
             background-clip: text;
             color: transparent;
             font-weight: 700;
