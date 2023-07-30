@@ -130,8 +130,12 @@ h3{
       position: relative;
       color: $black;
       font-size: 2.8rem;
-      height: 3.7rem;
-      width: 3.8rem;
+      height: 5rem;
+      width: 4.8rem;
+      @media all and (max-width: 40rem) {
+         height: 3.7rem;
+         width: 3.8rem;
+      }
       padding: 7px;
       top: 9%;
       left: 32%;
@@ -143,12 +147,12 @@ h3{
       -webkit-transition: all ease 0.5s;
 	      -moz-transition: all ease 0.5s;
 	         transition: all ease 0.5s;
-        @media all and (max-width: 40rem) {
+       @media all and (max-width: 40rem) {
         top: 5%;
-        left: 29%;
-        height: 4.8vh;
+        left: 33%;
+        height: 6vh;
         font-size: 2.3rem;
-        width: 8vw;
+        width: 13vw;
     }
    }
    .icon-box:hover {
@@ -176,7 +180,7 @@ h3{
    width: 500px;
        @media all and (max-width: 40rem) {
        max-height: 32vh;
-       max-width: 81vw;
+       max-width: 88vw;
     }
 }
 
@@ -204,7 +208,7 @@ h3{
 	/* firefox 31 */
 	transform: rotateY(0deg);
     @media all and (max-width: 40rem) {
-        transform: translate(15%,110%);
+        transform: translate(8%,60%);
     }
 }
 
@@ -216,7 +220,7 @@ h3{
 	transform: rotateY(180deg);
      @media all and (max-width: 40rem) {
         // transform: rotate(0deg);
-        transform: translate(15%, 220%);
+        transform: translate(8%, 169%);
     }
 }
 
