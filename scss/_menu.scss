@@ -107,6 +107,11 @@
         padding-right: 4rem;
         font-weight: 300;
         @include transition-ease;
+
+        &:hover{
+          color: darken($primary,30%);
+          transition: color 250ms ease-in-out;
+        }
       
       }
     }

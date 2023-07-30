@@ -40,7 +40,7 @@ a {
     text-decoration: none;
 
     &.active {
-        // background: linear-gradient(to right, rgba(203, 42, 42, 0.941), rgba(33, 16, 191, 0.895));
+        
         background:linear-gradient(to right ,rgba(203, 42, 42, 0.941),$orange);
         background-clip: text;
         color: transparent;
