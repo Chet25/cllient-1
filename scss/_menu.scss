@@ -107,10 +107,7 @@
         padding-right: 4rem;
         font-weight: 300;
         @include transition-ease;
-  
-        &:hover {
-          color: aqua;
-        }
+      
       }
     }
 }
@@ -143,12 +140,27 @@
   //  margin: 1rem 5rem;
    margin-bottom: 4rem;
    font-size: 1.95rem;
-
-   &:hover{
-    color: aqua;
-    @include transition-ease
-   }
-  }
+     &::after{
+          position: relative;
+          top: 12px;
+          left: 0;
+          content: "";
+          height: 7px;
+          width: 107%;
+          display: block;
+          background: 
+          radial-gradient(rgba(213, 60, 26, 0.35),
+          rgba(213, 60, 26, 0));
+          opacity: 0;
+          transition: opacity 300ms ease-in-out;
+          
+        }
+        &:hover{
+          &::after{
+            opacity: 1;
+          }
+        }
+      }
 
 }
 .desktop_container a{
@@ -163,7 +175,7 @@
   background-image: url(../images/chirag-new-logo-figma-finished.svg);
   background-size: contain;
   background-repeat: no-repeat;
-  position: fixed;
+  position: absolute;
   width: 5rem;
   height: 5rem;
   transform: translate(46%, 17%);
