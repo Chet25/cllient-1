@@ -1,7 +1,21 @@
 .about{
     transform: translateY(8%);
-    
-
+    &_body{
+        min-height: 150vh;
+    }
+    &_main{
+        position: relative;
+        top: 0;
+    }
+    &_header{
+        // border: 2px solid white;
+        position: sticky;
+        top: 0;
+        background: linear-gradient(to right ,$secondary 80%,rgba(29, 13, 2, 0.916));
+        height: 7rem;
+        width: 100vw;
+        
+    }
     &__container{
         max-width: 69.375rem;
         margin: 0 auto;
@@ -23,17 +37,26 @@
             
         }
     }
-
-    h2{
-        color: $primary;
+    h1 {
+        color: lighten($color: $primary, $amount: 15%);
         margin-left: 1.85rem;
-        font-size: 2.23rem;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 3.5rem;
+        font-weight: 700;
+        
+    }
+    h2{
+        @extend h1 ;
         font-weight: 550;
+        font-size: 2.23rem;
+
         
     }
     &__bio{
         color: $primary;
-        margin-bottom: 2.4rem;
+        font-size: 1.3rem;
+        margin-bottom: 5rem;
         margin-left: 1.85rem;
 
         @include breakpoint-down (medium){
@@ -43,25 +66,24 @@
     }
 
     &__grid{
+        padding-top: 1rem;
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2,1fr);
         gap: 1.875rem;
 
-
-        @include breakpoint-up(medium){
-            grid-template-columns: repeat(2,1fr);
-        }
-
-        @include breakpoint-up(large){
+        @include breakpoint-up(small){
             grid-template-columns: repeat(3,1fr);
         }
     }
 
 
     &__item{
+        height: 12rem;
         padding: 1.875rem 1.875rem 2.5rem 1.875rem;
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         box-shadow: 2px 2px 2px hsla(17, 83%, 54%,0.35);
         background: $secondary;
         position: relative;
@@ -88,21 +110,19 @@
     }
     &__image{
         
-        height: 3.5rem;
-        width: 3.5rem;
+        height: 5rem;
+        width: 5rem;
         background-size: contain;
         background-repeat: no-repeat;
-        background-position: left;
+        
     }
 
     &__name{
-        padding-left: 0.825rem;
-        padding-top: 1.25rem;
+        font-size: 1.4rem;
+        color: lighten($primary , 20%);
+        padding-top: 1.55rem;
     }
-    &__description{
-        padding: 1rem 0.8rem;
-        width: 100%;
-    }
+  
 }
 
 // .about{

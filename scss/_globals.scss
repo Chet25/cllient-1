@@ -20,8 +20,9 @@ body {
     font-size: $font-med;
     font-weight: 300;
     line-height: 1.2;
-    overflow: hidden;
-    @media  all and (max-width:70rem) {
+    overflow-x: hidden;
+    overflow-y: visible;
+    @media  all and (max-width:39.937rem) {
         overflow: auto;
     }
     color: white;
