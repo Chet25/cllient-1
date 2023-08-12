@@ -65,7 +65,7 @@ h3{
 /* THE BACK */
 
 .back{
-   background-image:url(../images/back-img.jpg);
+   background-image:url(../images/back-img.svg);
    background-size:cover;
    @media all and (max-width: 40rem) {
       background-position-x: -1rem;;
@@ -156,9 +156,9 @@ h3{
        @media all and (max-width: 40rem) {
         top: 5%;
         left: 33%;
-        height: 7vh;
-        font-size: 4.3rem;
-        width: 16vw;
+        height: 6vh;
+        font-size: 3.5rem;
+        width: 15vw;
     }
    }
    .icon-box:hover {
